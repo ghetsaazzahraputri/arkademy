@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toko Online Make up</title>
+    <style>
+        #item-list{
+            display: flex;
+        }
+        .item{
+            flex: 1;
+            background: grey;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .gambar{
+            margin: 5px;
+        }
+        .pemisah{
+           
+        }
+        body{
+            background-color: aqua;
+        }
+        h3{
+            border: 1px solid; 
+            border-radius: 20px;
+            background: violet;
+        }
+    </style>
+</head>
+<body>
+     <center>><h3>TOKO ONLINE MAKE UP</h3></center>
+    <div id="item-list"></div>
+    <script>
+    let item = [
+       {
+        "nama":"SilkygirlTrulyNudeeyeShadowPalette",
+        "gambar":"assets/img/SilkygirlTrulyNudeeyeShadowPalette.jpg",
+        "merek":"EyeShadowPalette",
+        "harga":"Rp 31.800"
+        },
+        {
+        "nama":"Safi",
+        "gambar":"assets/img/Safi_White1.jpg",
+        "merek":"Safi White Expert",
+        "harga":"Rp 38.999"
+        },
+        {
+        "nama":"Maybelline",
+        "gambar":"assets/img/Maybelline1.jpg",
+        "merek":"Maybelline1",
+        "harga":"Rp 25.600 "
+        },
+        {
+        "nama":"Emina",
+        "gambar":"assets/img/Emina_Sun1.jpg",
+        "merek":"Emina Sun protection",
+        "harga":"Rp 21.100 "
+        },
+        {
+        "nama":"MaybellineThe_Nudes_Palette",
+        "gambar":"assets/img/MaybellineThe_Nudes_Palette_L_1.jpg",
+        "merek":"Nudes Palette",
+        "harga":"Rp 35.300 "
+        },
+        {
+        "nama":"NYX Concealer Wand",
+        "gambar":"assets/img/NYX_Concealer_Wand_L_1.jpg",
+        "merek":"Concealer Wand",
+        "harga":"Rp 50.000 "
+        },
+        {
+        "nama":"PIXY_Line_and_Shadow_L_1",
+        "gambar":"assets/img/PIXY_Line_and_Shadow_L_1.jpg",
+        "merek":"Line And Shadow",
+        "harga":"Rp 40.100 "
+        },
+        {
+        "nama":"Maybelline_Baby1",
+        "gambar":"assets/img/Maybelline_Baby1.jpg",
+        "merek":"Baby Skin",
+        "harga":"Rp 22.200 "
+        },
+        {
+        "nama":"wardah BB Cream",
+        "gambar":"assets/img/wardah BB Cream (2).jpg",
+        "merek":"BB Cream",
+        "harga":"Rp 39.900 "
+        },
+        {
+        "nama":"essence",
+        "gambar":"assets/img/essence.jpg",
+        "merek":"essence",
+        "harga":"Rp 80.000"
+        },
+        {
+        "nama":"FOCULLURE",
+        "gambar":"assets/img/FOCULLURE.jpg",
+        "merek":"FOCULLURE",
+        "harga":"Rp 59.400 "
+        },
+        {
+        "nama":"House Dear Darling Tint",
+        "gambar":"assets/img/House Dear Darling Tint.jpg",
+        "merek":"House Dear Darling Tint",
+        "harga":"Rp 21.100 "
+        },
+        {
+        "nama":"Make Over Every",
+        "gambar":"assets/img/Make Over Every.jpg",
+        "merek":"Make Over Every",
+        "harga":"Rp 80.000"
+        },
+        {
+        "nama":"Aqua",
+        "gambar":"assets/img/SkinAquaUV1.jpg",
+        "merek":"skin Aqua",
+        "harga":"Rp 78.000 "
+        },
+        {
+        "nama":"Benefit",
+        "gambar":"assets/img/Benefit1.jpg",
+        "merek":"Benefit The Face prime",
+        "harga":"Rp 230.000 "
+        },
+        {
+        "nama":"Wild color Icon Blush",
+        "gambar":"assets/img/wildColorIconBlush1.jpg",
+        "merek":"ICON BLUSH",
+        "harga":"Rp 79.000 "
+        },
+        {
+        "nama":"Cosrx Aloe",
+        "gambar":"assets/img/COSRX Aloe.jpg",
+        "merek":"Cosrx Aloxe Shooting Sun Cream",
+        "harga":"Rp 125.000 "
+        },
+        {
+        "nama":"BenefitCosmeticsPowderBlush",
+        "gambar":"assets/img/BenefitCosmeticsPowderBlush.jpg",
+        "merek":"Benefit Powder Blush",
+        "harga":"Rp 280.000 "
+        },
+        {
+        "nama":"Make Over",
+        "gambar":"assets/img/Make over.jpg",
+        "merek":"Make Over ultra lipstik",
+        "harga":"Rp 69.000"
+        },
+        {
+        "nama":"Mizzu",
+        "gambar":"assets/img/Mizzu Power Maskara.jpg",
+        "merek":"Mizzu Power Maskara",
+        "harga":"Rp 50.000 "
+        },
+    ];
+    for(x in item){
+        let namaItem = item[x].nama;
+        let gambarItem = item[x].gambar;
+        let merekItem = item[x].merek;
+        let hargaItem = item[x].harga;
+
+        document.getElementById('item-list').innerHTML +="\
+        <div class='item'>\
+        <div class='gambar'><img src='"+gambarItem+"' alt='' /></div>\
+        <div class='nama'>"+namaItem+"</div>\
+        <div class='harga'>"+hargaItem+"</div>\
+        <div class='merek'>"+merekItem+"</div>\
+    </div>\
+    ";
+    if(((x+1)/5)===0){
+        document.getElementById('item-list').innerHTML+="\
+        <div class='pemisah'></div>\
+        ";
+    }
+
+    }
+    </script>
+    
+</body>
+</html>
