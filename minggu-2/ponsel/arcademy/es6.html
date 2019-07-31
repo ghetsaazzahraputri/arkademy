@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES 6</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ponsel{
+            background-color: aqua;
+            width: 900px;
+            margin: 0 auto;
+        }
+        #ponsel div{
+            padding:10px;
+        }
+        #ponsel div .nama-ponsel{
+            display: block;
+            color: brown;
+        }
+        #ponsel div .nama-ponsel::before{
+            content: "Nama:"
+        }
+        #ponsel div .harga-ponsel{
+            display: block;
+            color: black;
+        }
+        #ponsel div .harga-ponsel::before{
+            content: "harga:"
+        }
+        #ponsel div .ram-ponsel{
+            display: block;
+            color: blue;
+        }
+        #ponsel div .ram-ponsel::before{
+            content: "ram:"
+        }
+        #ponsel div .storage-ponsel{
+            display: block;
+            color: green;
+        }
+        #ponsel div .storage-ponsel::before{
+            content: "storage:"
+        }
+    </style>
+</head>
+<body>
+    <div id="ponsel"></div>
+    <script src="es6.js"></script>
+</body>
+</html>
