@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form-daftar</title>
+    <link rel="stylesheet"type="text/css"href="style.css">
+</head>
+<body>
+
+    <h1>Membuat From-Daftar</h1>
+
+    <div class="form-daftar">
+        
+        <form>
+        <table>
+
+            <tr>
+            <td><br><label for="Name"> Nama</lable></br></td>
+            <td><br><input type="text"name="nama"class="form-login"placeholder="Nama"required></br></td>
+            </tr>
+
+            <tr>
+            <td><br><label for="Kelas">Kelas</label></br></td>
+            <td><br><input type="text"name="kelas"class="form-login"placeholder="Kelas"required></br></td>
+            </tr>
+
+            <tr>
+            <td><br><label for="Alamat">Alamat</label></br></td>
+            <td><br><input type="text"name="alamat"class="form-login"placeholder="Alamat"required></br></td>
+            </tr>
+
+            <tr>
+            <td><br><button onclick="validasi()">Daftar</button></br></td>
+            </tr>
+        </form>
+        <script>
+        function validasi() {
+            var nama = document.getElementById('nama').value;
+            var nama = document.getElementById('kelas').value;
+            var nama = document.getElementById('alamat').value;
+            
+            
+        }
+        </script>
+    </div>
+    
+</body>
+</html>
