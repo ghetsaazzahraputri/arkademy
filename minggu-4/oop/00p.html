@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>class oop</title>
+</head>
+<body>
+    <div id="kotak1"></div>
+        <div id="kotak2"></div>
+        <div id="kotak3"></div>
+        <div id="kotak4"></div>
+    <script>
+        class OperasiHitung{
+            pertambahan(a,b){
+                return a+b
+            }
+            perkalian (a,b){
+                return a*b
+            }
+            pembagian(a,b){
+                return a/b
+            }
+            pengurangan(a,b){
+                return a-b
+            }
+        }
+
+        const OH = new OperasiHitung()
+        document.getElementById("kotak1").innerHTML= OH.pembagian(10,5);
+        document.getElementById("kotak2").innerHTML = OH.pengurangan(40,15);
+        document.getElementById("kotak3").innerHTML = OH.perkalian(9,9);
+        document.getElementById("kotak4").innerHTML = OH.pertambahan(8,8);
+
+        </script>
+</body>
+</html>
