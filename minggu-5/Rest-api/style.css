@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+    color: black;
+    
+}
+#display{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+}
+.nama{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+img{
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+    flex: wrap;
+}
